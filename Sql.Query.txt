@@ -1,0 +1,64 @@
+mumber of student presemt in each dept;
+select count(name),name
+from student
+group by deptno_id;
+
+STUDENT			
+ID	NAME	DEPT_ID	GRADE
+1	Navas	CSE	9
+2	Pradeep	CSE	9.5
+3	Aneesh	MECH	8.3
+4	Chethan	IT	8.5
+5	Harish	ECE	8
+
+
+NUmber of students in each dept who got greater than 8 grade
+
+
+select count(name) 
+from student 
+where grade>8
+group by dept;
+
+
+
+
+(=======================================)
+STUDENT			
+ID	NAME	DEPT_ID	GRADE
+1	Navas	1	9
+2	Pradeep	1	9.5
+3	Aneesh	2	8.3
+4	Chethan	4	8.5
+5	Harish	3	8
+			
+EMPLOYEE			
+ID	NAME	DEPT_ID	
+1	Raj	3	
+2	Nitin	2	
+3	RJ	1	
+			
+DEPT			
+ID	NAME		
+1	cse		
+2	ece		
+3	it		
+4	mech	
+
+
+
+print student name name and employee name
+ 
+select  STUDENT.NAME, EMPLOYEE.NAME
+from  STUDENT	, EMPLOYEE	
+wher STUDENT.DEPT_ID=EMPLOYEE.DEPT_ID and ;
+
+
+select STUDENT.NAME, EMPLOYEE.NAME
+from  STUDENT	, EMPLOYEE
+where STUDENT.DEPT_ID(+)=EMPLOYEE.DEPT_ID ;
+
+
+
+
+
